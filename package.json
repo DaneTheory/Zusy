@@ -13,9 +13,9 @@
   "license": "MIT",
   "scripts": {
     "start": "rollup -c --watch --environment SERVE:true",
-    "build": "npm run test && rollup -c",
+    "build": "yarn test && rollup -c",
     "test": "jest plugin.test.js",
-    "prepublish": "npm run test && rollup -c --silent"
+    "prepublish": "yarn test && rollup -c --silent"
   },
   "keywords": [
     "zusy",
