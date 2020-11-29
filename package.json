@@ -1,0 +1,55 @@
+{
+  "name": "zusy",
+  "version": "1.0.0",
+  "description": "State management library for react, vanillaJS, peanutButterNJelly, and wherever else your state needs a little love but you really would prefer not putting in all the effort to get things rolling. Built atop Zustand, Immer, and other goodies.",
+  "author": "Branden Dane",
+  "main": "dist/umd/zusy.js",
+  "module": "dist/mjs/zusy.mjs",
+  "files": [
+    "dist/umd",
+    "dist/mjs",
+    "dist/typings/"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "start": "rollup -c --watch --environment SERVE:true",
+    "build": "npm run test && rollup -c",
+    "test": "jest plugin.test.js",
+    "prepublish": "npm run test && rollup -c --silent"
+  },
+  "keywords": [
+    "zusy",
+    "zustand",
+    "immer",
+    "state",
+    "state management",
+    "library",
+    "module",
+    "node",
+    "react",
+    "nextjs",
+    "vanilla",
+    "javascript",
+    "danetheory"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-private-methods": "^7.12.1",
+    "@babel/plugin-transform-async-to-generator": "^7.12.1",
+    "@babel/plugin-transform-regenerator": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "@rollup/plugin-babel": "^5.2.1",
+    "@rollup/plugin-commonjs": "^15.1.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@types/jest": "^26.0.15",
+    "babel-eslint": "^10.1.0",
+    "jest": "^26.6.3",
+    "rollup": "^2.34.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
